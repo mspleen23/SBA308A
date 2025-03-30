@@ -21,20 +21,20 @@
     <!--Navigation Bar-->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logo</a>
+          <a class="navbar-brand" href="#"><img src="./pictures/Mlogo.jpeg" alt="Logo: Letter M with sparkly background" height="60px" width="65px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Melissa's Prayer Room</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">💕 Connect with Me 💕</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#"></a>
               </li>
             </ul>
           </div>
@@ -42,29 +42,36 @@
       </nav>
        
       <div class="title">
-            <h1>Melissa's Prayer Room </h1>
-            <h3>Guiding you to fulfillment through Christ Jesus.</h3>
-            <p>Phillippians 4:6-7 "Do not be anxious about anything, but in every situation, by prayer and supplication, with thanksgiving, present your request through God. And the peace of God, which transcends all understandingm will guard your hearts and your minds in Christ Jesus" -Amen 🙏 </p>
+            <div class= "melissa">
+              <p>Melissa's Prayer Room</p>
+            </div>
+            <h2><i>Guiding you to fulfillment through Christ Jesus.</i></h2>
+            <p><em>Phillippians 4:6-7 "Do not be anxious about anything, but in every situation, by prayer and supplication, with thanksgiving, present your request through God. And the peace of God, which transcends all understandingm will guard your hearts and your minds in Christ Jesus" -Amen 🙏 </em></p>
       </div>
  
 
       <!-- 1st Body Container  -->
-    <div class="container p-5 my-5 border">
-        <div class="row">
-            <div class="col">
-                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjM5NHFxZHQ3bnp2YmVvbm0zNGhib2twdG5iNml4M2h5cnl3amc0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0VQM1qNEhSK1SqHUc/giphy.gif" alt="gif of a cartoon black girl praying">
-            </div>
-            <div class="col">
-                <h2>My name is Melissa and I am a woman of God, helping to spread the Word of God through different resources. God has blessed me with this idea as I was struggling and losing hope in being successful in my journey learning about software engineering. Throughout this process, God has kept reminding me to keep my eyes on Him no matter how challenging it gets. I hope this what you find on this app is encourgaing and inspirational. </h2>
-            </div>
-        </div>
-    </div>
-           <!-- 2nd Body Container -->
+   <div class="aboutMe">
      <div class="container p-5 my-5 border">
         <div class="row">
             <div class="col">
-                <h1>The Bible</h1>
-                <h3>John 1:1: "In the beginning was the Word, and the Word was with God, and the Word was God."</h3>
+                <h1 style="font-size: 40px; margin-top: -30px; margin-bottom: 20px;">✨ About Me ✨
+                </h1>
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjM5NHFxZHQ3bnp2YmVvbm0zNGhib2twdG5iNml4M2h5cnl3amc0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0VQM1qNEhSK1SqHUc/giphy.gif" alt="gif of a cartoon black girl praying">
+            </div>
+            <div class="col">
+                <h2>My name is Melissa and I am a woman of God, helping to spread the Word of God. God has blessed me with this idea as I was struggling and losing hope in my journey of learning about software engineering. Throughout this process, God has kept reminding me to keep my eyes on Him no matter how challenging it gets. I hope this what you find on this app is encourgaing and inspirational. </h2>
+            </div>
+        </div>
+     </div>
+   </div>
+           <!-- 2nd Body Container -->
+    <div class="bibleSection">
+      <div class="container p-5 my-5 border">
+        <div class="row">
+            <div class="col">
+                <h1>✨ The Bible ✨</h1>
+                <h3 style="font-weight: 20px; font-size: 16px;"><em>John 1:1: "In the beginning was the Word, and the Word was with God, and the Word was God."</em></h3>
 
                 <div class="list-group">
                     <a href="https://www.biblegateway.com/versions/New-King-James-Version-NKJV-Bible/#booklist" class="list-group-item list-group-item-action list-group-item-warning">New King James Version (NKJV)</a>
@@ -74,19 +81,24 @@
 
             </div>
             <div class="col">
-                <img src="./pictures/Bible.jpg" alt="image of a pink cartoon Bible" height="250px" width="250px">
+               <div class="biblePic">         <img src="./pictures/Bible.jpg" alt="image of a pink cartoon Bible" height="250px" width="250px">
+               </div>
             </div>
-        </div>
-      </div>
+         </div>
+       </div>
+     </div>
  
        <!-- 3rd Body Container  -->
 
-      <div id="apiScript" class="container p-5 my-5 border">
-        <h1>Need a Verse??</h1>
-        <h3>Click on some of my favorite Bible Scriptures</h3>
+     <div class=scriptures>
+      <div id="apiContainer">
+        <div id="apiScript" class="container p-5 my-5 border">
+          <h1>✨ Need a Verse?? ✨</h1>
+          <h3>Click on some of my favorite Bible Scriptures</h3>
 
-         <!--Carousel of Bible scriptures (API needed here)-->
-         <button class="button">Choose A New Verse</button>
+          <!--Carousel of Bible scriptures (API needed here)-->
+         </div>
+       </div>
      </div>
 
 
@@ -94,7 +106,7 @@
     <div class="container p-5 my-5 border">
       <div class="row">
           <div class="col">
-            <h1>What's Your Vibe????</h1>
+            <h1>✨ What's Your Vibe??? ✨</h1>
             <h3>Find Scripture for...</h3>
               <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExejJwNTN2dDBvMWFoYTdkem05cTN6ZTRuamhwY2Z4bXI2MnpjOHk2biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Wmbq9g7AE7N0N7L9KN/giphy.gif" alt="gif of a lynn whitfeild asking 'did you pray about it' scene from greenleaf">
           </div>
@@ -116,41 +128,49 @@
 
 
        <!--Prayer Form -->
-     <div class="container mt-3">
-      <h1>Prayer Request</h1>
-        <h5>In need of a prayer??? No worry! We will pray for you ❤️🙏 </h5>
-        <p>Leave your name and prayer request below. Submit when you are done.</p>
-        <form id="myForm" action="/action_page.php" onsubmit="return validateForm()"> 
+     <div class="prayerForm">
+        <div class="container mt-3">
+             <h1>🙏 Prayer Request 🙏</h1>
+              <h5>In need of a prayer??? No worry! We will pray for you ❤️ </h5>
+              <p>Leave your name and prayer request below. Submit when you are done.</p>
+              
+            <form id="myForm" action="/action_page.php" onsubmit="return validateForm()"> 
   
-            <div class="form-floating mb-3 mt-3">
-              <input type="text" class="form-control" id="name" required placeholder="Melissa Spleen" name="name">
-              <label for="Melissa Spleen"style="font-size: 14px;">Name: Melissa Spleen</label>
-              <span id="email-error" class="error-message"></span>
-        
-            </div>
-
-            <div class="form-floating mt-3 mb-3">
-              <textarea type="text" class="form-control" id="comments" minlength="50"
-              maxlength="250" placeholder="Enter comments here" name="cmmt" rows="5"></textarea>
-              <span id="comments-error" class="error-message"></span>
-        
-              <label for="cmmt" style="font-size: 14px;"> Please pray that I pass this Per Scholas Software Engineering course 😩
-              </label>
-            </div>
-
-            <button input type="submit" class="btn btn-primary">God Bless 🙏 </button>
+                    <div class="form-floating mb-3 mt-3">
+                      <input type="text" class="form-control" id="name" required placeholder="Melissa Spleen" name="name">
+                      <label for="Melissa Spleen"style="font-size: 14px;">Name: Melissa Spleen</label>
+                      <span id="email-error" class="error-message"></span>
             
-            <div id="myModal" style="display: none;">
-                <div id="modal-content">
-                <span id="close">&times;</span>
-                <p>Prayer submitted successfully! Have faith that God will answer them! Be Blessed</p>
-                </div>
-            </div>
-        </form>
-               
-     </div>
-    
+                    </div>
 
+                  <div class="form-floating mt-3 mb-3">
+                      <textarea type="text" class="form-control" id="comments" minlength="50"
+                    maxlength="250" placeholder="Enter comments here" name="cmmt" rows="5"></textarea>
+                    <span id="comments-error" class="error-message"></span>
+            
+                      <label for="cmmt" style="font-size: 14px;"> Please pray that I pass this Per Scholas Software   Engineering course 😩
+                      </label>
+                  </div>
+
+                    <button input type="submit" class="btn btn-primary">God Bless 🙏 </button>
+                
+                    <div id="myModal" style="display: none;">
+                      <div id="modal-content">
+                        <span id="close">&times;</span>
+                        <p>Prayer submitted successfully! Have faith that God will answer them! Be Blessed</p>
+                      </div>
+                    </div>
+            
+            </form>      
+         </div>
+     </div>
+
+
+
+    
+    
+  </body>
+</html>
   
 
 
