@@ -54,9 +54,38 @@ document.addEventListener("DOMContentLoaded", () => {
  
     button.addEventListener("click", getData);
     bibleScriptures.appendChild(button);
-
-
 });
+
+///////////////////////////////////////////////////////////////
+
+function fetchVerse() {
+    const book = document.getElementById("book").value.trim().toLowerCase();
+    const chapter = document.getElementById("chapter").value.trim();
+    const verse = document.getElementById("verse").value.trim();
+    const version = "kjv"; 
+
+    if (!book || !chapter || !verse) {
+        alert("Please enter a book, chapter, and verse.");
+        return;
+    }
+
+    const apiUrl = `https://bible-api.com/verses/{keyword}`;
+
+    fetch(apiUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Verse not found.");
+            }
+            return response.json();
+        })
+        .then(data => {
+            document.getElementById("result").innerText = `"${data.text}" - ${book.charAt(0).toUpperCase() + book.slice(1)} ${chapter}:${verse}`;
+        })
+        .catch(error => {
+            console.error("Error fetching data:", error);
+            document.getElementById("result").innerText = "Verse not found. Please check your input.";
+        });
+}
 
 getData();
   

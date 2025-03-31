@@ -106,22 +106,23 @@
  
 <!--------------------Bible Verse Search------------------------>
       <div class=bibleSearch>
-        <div id="apiContainer">
+        <div id="apiContainer2">
           <div id="apiScript" class="container p-5 my-5 border">
-            <h1>✨ Scripture Search ✨</h1>
-             <!-- Search Input Fields -->
-                <input type="text" id="book" placeholder="Book" />
-                <input type="number" id="chapter" placeholder="Chapter" />
-                <input type="number" id="verse" placeholder="Verse" />
-                <button id="searchBtn">Search</button>
+            <h2>✨🙏 Bible Verse Lookup 🙏✨</h2>
 
-                <!-- Display Bible Verse -->
-                <div id="verseDisplay"></div>
-
-                <!--------Pagination----->
-                <button id="prev" disabled>Previous</button>
-                <span id="page-info">Page 1</span>
-                <button id="next">Next</button>
+            <label for="book">Book:</label>
+            <input type="text" id="book" placeholder="e.g., John">
+        
+            <label for="chapter">Chapter:</label>
+            <input type="number" id="chapter" placeholder="e.g., 3">
+        
+            <label for="verse">Verse:</label>
+            <input type="number" id="verse" placeholder="e.g., 16">
+        
+            <button onclick="fetchVerse()">Get Verse</button>
+        
+            <h3>Scripture:</h3>
+            <p id="result"></p>
           </div>
         </div>
       </div>
