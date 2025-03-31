@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SBA 308A</title>
+
     <!--My Css-->
     <link rel="stylesheet" href="index.css">
 
@@ -14,6 +15,8 @@
 
     <!--Js Script-->
     <script src="index.js" defer></script>
+    <script src="bibleSearch.js" defer></script>
+
 
 </head>
 <body>
@@ -21,7 +24,7 @@
     <!--Navigation Bar-->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./pictures/Mlogo.jpeg" alt="Logo: Letter M with sparkly background" height="60px" width="65px"></a>
+          <a class="navbar-brand" href="#"><img src="./pictures/Mlogo.jpeg" alt="Logo: Letter M with sparkly background" height="60px" width="60px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -43,10 +46,10 @@
        
       <div class="title">
             <div class= "melissa">
-              <p>Melissa's Prayer Room</p>
+              <p>✨ Melissa's Prayer Room ✨</p>
             </div>
             <h2><i>Guiding you to fulfillment through Christ Jesus.</i></h2>
-            <p><em>Phillippians 4:6-7 "Do not be anxious about anything, but in every situation, by prayer and supplication, with thanksgiving, present your request through God. And the peace of God, which transcends all understandingm will guard your hearts and your minds in Christ Jesus" -Amen 🙏 </em></p>
+            <p><em>Philippians 4:6-7 "Do not be anxious about anything, but in every situation, by prayer and supplication, with thanksgiving, present your request through God. And the peace of God, which transcends all understanding will guard your hearts and your minds in Christ Jesus" -Amen 🙏 </em></p>
       </div>
  
 
@@ -60,7 +63,7 @@
                 <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjM5NHFxZHQ3bnp2YmVvbm0zNGhib2twdG5iNml4M2h5cnl3amc0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0VQM1qNEhSK1SqHUc/giphy.gif" alt="gif of a cartoon black girl praying">
             </div>
             <div class="col">
-                <h2>My name is Melissa and I am a woman of God, helping to spread the Word of God. God has blessed me with this idea as I was struggling and losing hope in my journey of learning about software engineering. Throughout this process, God has kept reminding me to keep my eyes on Him no matter how challenging it gets. I hope this what you find on this app is encourgaing and inspirational. </h2>
+                <h2>My name is Melissa and I am a woman of God, helping to spread the Word of God. God has blessed me with this idea as I was struggling and losing hope in my journey of learning about software engineering. Throughout this process, God has kept reminding me to keep my eyes on Him no matter how challenging it gets. I hope this what you find on this site is encouraging and inspirational. </h2>
             </div>
         </div>
      </div>
@@ -100,9 +103,30 @@
          </div>
        </div>
      </div>
+ 
+<!--------------------Bible Verse Search------------------------>
+      <div class=bibleSearch>
+        <div id="apiContainer">
+          <div id="apiScript" class="container p-5 my-5 border">
+            <h1>✨ Scripture Search ✨</h1>
+             <!-- Search Input Fields -->
+                <input type="text" id="book" placeholder="Book" />
+                <input type="number" id="chapter" placeholder="Chapter" />
+                <input type="number" id="verse" placeholder="Verse" />
+                <button id="searchBtn">Search</button>
 
+                <!-- Display Bible Verse -->
+                <div id="verseDisplay"></div>
 
-       <!-- 4th Body Containers  -->
+                <!--------Pagination----->
+                <button id="prev" disabled>Previous</button>
+                <span id="page-info">Page 1</span>
+                <button id="next">Next</button>
+          </div>
+        </div>
+      </div>
+      
+       <!----------- 4th Body Containers ------------>
     <div class="container p-5 my-5 border">
       <div class="row">
           <div class="col">
@@ -148,7 +172,7 @@
                     maxlength="250" placeholder="Enter comments here" name="cmmt" rows="5"></textarea>
                     <span id="comments-error" class="error-message"></span>
             
-                      <label for="cmmt" style="font-size: 14px;"> Please pray that I pass this Per Scholas Software   Engineering course 😩
+                      <label for="cmmt" style="font-size: 14px;"> Pray that I pass this Per Scholas course 😩
                       </label>
                   </div>
 
@@ -157,18 +181,13 @@
                     <div id="myModal" style="display: none;">
                       <div id="modal-content">
                         <span id="close">&times;</span>
-                        <p>Prayer submitted successfully! Have faith that God will answer them! Be Blessed</p>
+                        <p>Prayer submitted successfully! Trust that God will answer them! Be Blessed</p>
                       </div>
                     </div>
-            
-            </form>      
-         </div>
+             </form>      
+        </div>
      </div>
 
-
-
-    
-    
   </body>
 </html>
   

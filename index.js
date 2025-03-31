@@ -55,5 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", getData);
     bibleScriptures.appendChild(button);
 
-    getData();
+
 });
+
+getData();
+  
