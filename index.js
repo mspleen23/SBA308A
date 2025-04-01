@@ -69,7 +69,10 @@ function fetchVerse() {
         return;
     }
 
-    const apiUrl = `https://bible-api.com/verses/{keyword}`;
+    const apiUrl = 'https://api.scripture.api.bible/v1/bibles/${bibleVersionID}/verses/${bibleVerseID}?include-chapter-numbers=false&include-verse-numbers=false'
+    
+    // `https://bible-api.com/verses/{keyword}a4e31b19f09630aeeb240b5fed7727e0`;
+   
 
     fetch(apiUrl)
         .then(response => {
